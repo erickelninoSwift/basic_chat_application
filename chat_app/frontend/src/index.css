@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary: #171c2a;
+  --secondary: #11141f;
+  --tertiary: #1f222e;
+  --dark: #0e0e12;
+  --green: #52d794;
+  --blue: #00b3bd;
+  --light: #fff;
+  --red: indianred;
+}
+
+/* common global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+.jackpot {
+  height: 100%;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, var(--green) 0%, var(--blue) 100%);
+  font-size: 18px;
+}
+
+.jackpot {
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+p.error {
+  color: var(--red);
+  font-size: 1.2rem;
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.login-container {
+  display: grid;
+  min-width: 800px;
+  max-width: 1000px;
+  max-height: 800px;
+  width: 60%;
+  height: 90vh;
+  background: var(--primary);
+  border-radius: 10px;
+  grid-template-areas:
+    "left-column branding"
+    "left-column login-form";
+}
+
+.left-column {
+  grid-area: left-column;
+  background-color: var(--tertiary);
+  background-image: url("../images/illustration.png");
+  background-size: 68%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
