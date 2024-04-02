@@ -5,13 +5,19 @@ const Menu = () => {
     <>
       <div className="menu">
         <div className="menu-item">
-          <a href="/inbox">Inbox</a>
+          <a href="/inbox" className="text-xl">
+            Inbox
+          </a>
         </div>
         <div className="menu-item">
-          <a href="/users">Users</a>
+          <a href="/users" className="text-xl">
+            Users
+          </a>
         </div>
         <div className="menu-item">
-          <a href="/">Login</a>
+          <a href="/" className="text-xl">
+            Login
+          </a>
         </div>
       </div>
     </>
