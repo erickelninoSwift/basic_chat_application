@@ -46,7 +46,7 @@ const Inbox = () => {
             </div>
           </div>
         </div>
-        <div className="chat-form">
+        <div className="chat-form mb-2">
           <img src={attachement} alt={""} />
           <input type="text" placeholder="Type a message" />
         </div>
