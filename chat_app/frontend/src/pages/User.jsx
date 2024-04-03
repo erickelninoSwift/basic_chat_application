@@ -9,7 +9,7 @@ const User = () => {
 
   return (
     <>
-      <div className="manageUser-container  my-10">
+      <div className="manageUser-container my-10">
         <div className="title">
           <h2>Manage Users</h2>
         </div>
@@ -29,13 +29,13 @@ const User = () => {
                 <th>Manage</th>
               </tr>
             </thead>
-            <tbody className="users-table">
+            <tbody className="">
               <tr className="">
                 <td className="name">
                   <img src={user} />
                   <span>User 1</span>
                 </td>
-                <td>email@email.com</td>
+                <td className="">email@email.com</td>
                 <td className="manage">
                   <img src={trash} alt="Delete" />
                 </td>
